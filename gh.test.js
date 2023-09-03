@@ -36,19 +36,19 @@ describe("Github page tests", () => {
   }, 6000);
 });
 
-test("About", async () => {
+test("Title About", async () => {
   await page.goto("https://github.com/about");
   const title = await page.title();
   expect(title).toEqual("About · GitHub");
 }, 6000);
 
-test("Security", async () => {
+test("Title Security", async () => {
   await page.goto("https://github.com/security");
   const title = await page.title();
   expect(title).toEqual("GitHub Security · GitHub");
 }, 6000);
 
-test("Partners", async () => {
+test("Title Partners", async () => {
   await page.goto("https://partner.github.com/");
   const title = await page.title();
   expect(title).toEqual("Partner with GitHub | GitHub Partner Portal");
